@@ -1,0 +1,51 @@
+:root {
+  --color-primary-light: rgb(25, 146, 212);
+  --color-primary-dark: rgb(10, 61, 88);
+  --color-red: rgb(185, 22, 22);
+
+  --sidebar-bg: rgb(51, 51, 51);
+  --header-bg: white;
+  --projects-bg: rgb(226, 232, 240);
+
+  --shadow-dark: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 3rem 6rem rgba(0, 0, 0, 0.06);
+  --shadow-low: rgba(58, 57, 57, 0.24) 0px 3px 8px;
+
+  --king: "Loved by the King";
+  --saira: "Saira Condensed";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Poppins";
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 33rem 1fr;
+  grid-template-rows: min-content min-content;
+  max-width: 161rem;
+  margin: 8rem auto;
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}

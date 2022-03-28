@@ -1,0 +1,67 @@
+.sidebar {
+  background-color: var(--sidebar-bg);
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 3rem;
+
+    &--text {
+      font-family: var(--saira);
+      font-weight: 600;
+      color: white;
+      font-size: 4rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__links {
+    fill: white;
+
+    &--flex {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      font-size: 2.2rem;
+      box-shadow: inset 0 0 0 0 var(--sidebar-bg);
+      line-height: 1;
+      cursor: pointer;
+      transition: ease-out 0.2s;
+
+      &:hover {
+        box-shadow: inset 33rem 0 0 0 var(--color-red);
+      }
+    }
+  }
+  &__settings {
+    margin: 3rem 0;
+  }
+}
+
+.logo {
+  height: 4.5rem;
+  width: 4.5rem;
+  fill: white;
+}
+
+.link {
+  height: 3rem;
+  width: 3rem;
+  fill: white;
+}
+
+.link__container {
+  margin: 1.3rem;
+  margin-left: 3.5rem;
+  margin-right: 2.5rem;
+}
+
+.text__container {
+  margin: 1rem 0;
+}
