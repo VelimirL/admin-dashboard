@@ -498,7 +498,8 @@ button {
   font-size: 1.5rem;
   color: #6d6d6d;
   letter-spacing: 1px;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 1.7rem; }
   @media (max-width: 700px) {
     .project__name {
       font-size: 1.7rem; } }

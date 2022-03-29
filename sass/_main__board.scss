@@ -266,6 +266,7 @@
   color: rgb(109, 109, 109);
   letter-spacing: 1px;
   font-weight: bold;
+  line-height: 1.7rem;
   @include respond(phone) {
     font-size: 1.7rem;
   }
