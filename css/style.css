@@ -38,7 +38,7 @@ html {
       border-radius: 0; } }
   @media (max-width: 500px) {
     .container {
-      grid-template-columns: 5rem minmax(350px, 1fr); } }
+      grid-template-columns: 5rem minmax(300px, 1fr); } }
 
 body {
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
@@ -194,7 +194,8 @@ button {
   @media (max-width: 500px) {
     .user__stats {
       gap: 1rem;
-      margin: 0 1rem; } }
+      margin: 0 1rem;
+      position: relative; } }
   .user__stats--avatar {
     border-radius: 50%;
     overflow: hidden;
@@ -210,6 +211,11 @@ button {
     @media (max-width: 700px) {
       .user__stats--name {
         font-size: 3rem; } }
+  @media (max-width: 500px) {
+    .user__stats--notifications {
+      position: absolute;
+      top: -1rem;
+      right: -1rem; } }
 
 .welcome__message {
   display: flex;
@@ -324,7 +330,7 @@ button {
   margin: 3rem; }
   @media (max-width: 500px) {
     .projects__group {
-      margin-left: 0rem; } }
+      margin-left: 1.5rem; } }
 
 .projects__container {
   display: grid;
