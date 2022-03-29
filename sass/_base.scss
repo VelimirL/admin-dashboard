@@ -37,6 +37,15 @@ html {
   min-height: 50rem;
   overflow: hidden;
   border-radius: 2rem;
+
+  @include respond(tab-land) {
+    grid-template-columns: 7rem 1fr;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+  @include respond(mini-phone) {
+    grid-template-columns: 7rem minmax(350px, 1fr);
+  }
 }
 
 body {

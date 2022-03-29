@@ -11,12 +11,19 @@
     gap: 0.8rem;
     margin: 3rem;
 
+    @include respond(tab-land) {
+      margin: 2rem;
+    }
+
     &--text {
       font-family: var(--saira);
       font-weight: 600;
       color: white;
       font-size: 4rem;
       margin-left: 0.5rem;
+      @include respond(tab-land) {
+        display: none;
+      }
     }
   }
 
@@ -48,6 +55,11 @@
   height: 4.5rem;
   width: 4.5rem;
   fill: white;
+
+  @include respond(tab-land) {
+    height: 3rem;
+    width: 3rem;
+  }
 }
 
 .link {
@@ -60,8 +72,16 @@
   margin: 1.3rem;
   margin-left: 3.5rem;
   margin-right: 2.5rem;
+
+  @include respond(tab-land) {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
 }
 
 .text__container {
   margin: 1rem 0;
+  @include respond(tab-land) {
+    display: none;
+  }
 }
