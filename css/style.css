@@ -199,6 +199,9 @@ button {
     font-family: var(--saira);
     font-size: 2.4rem;
     font-weight: 600; }
+    @media (max-width: 700px) {
+      .user__stats--name {
+        font-size: 3.5rem; } }
 
 .welcome__message {
   display: flex;
@@ -251,6 +254,9 @@ button {
     background-color: var(--color-red);
     text-align: center;
     transition: all 0.2s; }
+    @media (max-width: 700px) {
+      .post__buttons--button {
+        font-size: 3rem; } }
     @media (max-width: 500px) {
       .post__buttons--button {
         padding: 0.6rem 1.2rem; } }
@@ -355,6 +361,9 @@ button {
       min-height: 25%;
       overflow: hidden;
       text-overflow: ellipsis; }
+      @media (max-width: 700px) {
+        .project__info--title {
+          font-size: 3rem; } }
     .project__info--desc {
       font-family: var(--saira);
       font-weight: bold;
@@ -364,6 +373,10 @@ button {
       -webkit-line-clamp: 5;
       -webkit-box-orient: vertical;
       overflow: hidden; }
+      @media (max-width: 700px) {
+        .project__info--desc {
+          font-size: 2rem;
+          line-height: 2rem; } }
   .project__icons {
     display: flex;
     gap: 3rem;
@@ -400,6 +413,9 @@ button {
       padding-top: 1rem; }
     .announcements__container > :last-child {
       padding-bottom: 1rem; }
+      @media (max-width: 700px) {
+        .announcements__container > :last-child {
+          padding-bottom: 2rem; } }
 
 .annon__item {
   display: flex;
@@ -411,12 +427,19 @@ button {
     font-family: inherit;
     font-weight: 600;
     font-size: 2rem; }
+    @media (max-width: 700px) {
+      .annon__item--title {
+        font-size: 2.5rem; } }
   .annon__item--content {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-size: 1.3rem; }
+    @media (max-width: 700px) {
+      .annon__item--content {
+        font-size: 2rem;
+        line-height: 2rem; } }
 
 .trending {
   display: flex;
@@ -455,6 +478,9 @@ button {
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.7rem; }
+  @media (max-width: 700px) {
+    .handle {
+      font-size: 2.5rem; } }
 
 .project__name {
   font-family: inherit;
@@ -462,12 +488,23 @@ button {
   color: #6d6d6d;
   letter-spacing: 1px;
   font-weight: bold; }
+  @media (max-width: 700px) {
+    .project__name {
+      font-size: 2rem; } }
 
 .avatar__small {
   height: 5rem;
   width: 5rem;
   border-radius: 1504990px;
   overflow: hidden; }
+  @media (max-width: 700px) {
+    .avatar__small {
+      height: 6rem;
+      width: 6rem; } }
   .avatar__small--img {
     height: 5rem;
     width: 5rem; }
+    @media (max-width: 700px) {
+      .avatar__small--img {
+        height: 6rem;
+        width: 6rem; } }

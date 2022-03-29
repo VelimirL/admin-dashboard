@@ -103,6 +103,9 @@
       min-height: 25%;
       overflow: hidden;
       text-overflow: ellipsis;
+      @include respond(phone) {
+        font-size: 3rem;
+      }
     }
 
     &--desc {
@@ -114,6 +117,10 @@
       -webkit-line-clamp: 5;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      @include respond(phone) {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
     }
   }
 
@@ -161,6 +168,9 @@
     }
     & > :last-child {
       padding-bottom: 1rem;
+      @include respond(phone) {
+        padding-bottom: 2rem;
+      }
     }
   }
 }
@@ -176,6 +186,10 @@
     font-family: inherit;
     font-weight: 600;
     font-size: 2rem;
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
   }
 
   &--content {
@@ -184,6 +198,10 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-size: 1.3rem;
+    @include respond(phone) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
   }
 }
 
@@ -233,6 +251,10 @@
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.7rem;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
 
 .project__name {
@@ -241,6 +263,9 @@
   color: rgb(109, 109, 109);
   letter-spacing: 1px;
   font-weight: bold;
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }
 
 .avatar__small {
@@ -248,9 +273,17 @@
   width: 5rem;
   border-radius: 1504990px;
   overflow: hidden;
+  @include respond(phone) {
+    height: 6rem;
+    width: 6rem;
+  }
 
   &--img {
     height: 5rem;
     width: 5rem;
+    @include respond(phone) {
+      height: 6rem;
+      width: 6rem;
+    }
   }
 }
