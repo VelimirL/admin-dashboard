@@ -244,6 +244,9 @@
     flex-direction: column;
     font-family: var(--saira);
   }
+  @include respond(mini-phone) {
+    padding-left: 1.5rem;
+  }
 }
 
 .handle {
@@ -264,7 +267,7 @@
   letter-spacing: 1px;
   font-weight: bold;
   @include respond(phone) {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
